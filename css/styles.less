@@ -9,13 +9,41 @@
 @footer: rgb(34,34,34);
 
 
+// GLOBAL CLASSES
+
+.row-no-margin {
+ margin-left: 0px;
+ margin-right: 0px;
+} 
+
+.col-40 {
+  width: 40%;
+  padding: 0 10%;
+}
+
+.pad-left-10 {
+  padding-left: 10%;
+}
+
+.pad-left-5 {
+  padding-left: 5%;
+}
+
+.pad-right-10 {
+  padding-left: 10%;
+}
+
+.pad-right-5 {
+  padding-left: 5%;
+}
 
 //GLOBAL STYLES
+
 * {
   outline: 1px dashed red;
 }
 
-html, body, wrapper {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +53,12 @@ body {
   height: 100%;
   position: relative;
 //  opacity: 1;
+  
+  .ng-scope {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .container-fluid, wrapper {
@@ -74,7 +108,7 @@ body {
   height: 15%;
   display: inline-flex;
   align-content:space-between;
-  background-color: red;
+//  background-color: red;
   
   .menu {
     width: 100%;
@@ -100,7 +134,9 @@ body {
       color: @color2;
       font-family: cursive;
       font-size: 4em;  
-      opacity: 0.7;
+      margin: 0 5% 8% 5%;
+      opacity: 0.5;
+      text-align: right;
     //  transition
     }
 
@@ -109,11 +145,11 @@ body {
       font-family: sans-serif;
       font-size: 1.25em;
       font-weight: 400;
-      opacity: 0.7;
-    //  transition
+      opacity: 0.5;    
       text-align: left;
       text-transform: uppercase;
-
+    //  transition
+      
       a {
         color: @color3;
         margin-top: 20px;
@@ -124,11 +160,129 @@ body {
 }
 
 
+// WORKS STYLES
+
+.bg-works {
+//  position: fixed;
+  width: 80%;
+  height: 800px;
+  background-image: url(../images/artspire.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+//  background-repeat: no-repeat;
+//  top: 0;
+//  background-color: red;
+}
+
+.works-container {
+  padding: 5% 10%;
+  
+  .row {
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    .col-md-4, col-md-5, .col-md-6, .col-md-7, col-md-8 {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
+  .img1 {
+    background-image: url(../images/maram.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img2 {
+    background-image: url(../images/zooecomuseum.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img3 {
+    background-image: url(../images/cgi.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img4 {
+    background-image: url(../images/antoinelestage.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img5 {
+    background-image: url(../images/tokkun.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img6 {
+    background-image: url(../images/soulofthedeadtree.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img7 {
+    background-image: url(../images/pmmt.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img8 {
+    background-image: url(../images/dixon.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img9 {
+    background-image: url(../images/artspire.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img10 {
+    background-image: url(../images/depevt.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img11 {
+    background-image: url(../images/lerecyclagepasapas.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img12 {
+    background-image: url(../images/inlogia.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img13 {
+    background-image: url(../images/witchatt.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img14 {
+    background-image: url(../images/antro.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img15 {
+    background-image: url(../images/origami.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  .img16 {
+    background-image: url(../images/legrandbal.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+}
 
 //ABOUT STYLES
 
-
-
+.img-bg {
+  width: 100%;
+  background-color: white;
+  padding: 5%;
+  
+  .about-header-img {
+   background-image: url(../images/fond_about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
 
 
 //CONTACT STYLES
