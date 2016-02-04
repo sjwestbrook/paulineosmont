@@ -5,6 +5,8 @@
 @color1: rgb(189,189,189);
 @color2: rgb(205,181,134);
 @color3: rgb(205,205,205);
+@color4: #ffffff;
+@color5: rgb(119,119,119);
 @footer-text: rgb(146,146,146);
 @footer: rgb(34,34,34);
 
@@ -145,6 +147,7 @@ body {
       font-family: sans-serif;
       font-size: 1.25em;
       font-weight: 400;
+      letter-spacing: 0.15em;
       opacity: 0.5;    
       text-align: left;
       text-transform: uppercase;
@@ -271,17 +274,158 @@ body {
 
 //ABOUT STYLES
 
+.header-white {
+  height: 25%;
+  width: 100%;
+  display: inline-flex;
+  align-content:space-between;
+  
+  .menu {
+    width: 60%;
+    margin: 0 auto;
+    
+//    .menuhome {
+//
+//    }
+//
+//    .menuabout {
+//
+//    }
+//
+//    .menublog {
+//
+//    }
+//
+//    .menucontact {
+//
+//    }
+    
+    .logo-circle {
+      z-index: 10;
+    }
+    
+    .number {
+      border-bottom: 3px solid @color2;
+      color: @color2;
+      font-family: cursive;
+      font-size: 4em;  
+      margin: 0 5% 8% 5%;
+      opacity: 0.5;
+      text-align: right;
+    //  transition
+    }
+
+    .label {
+      color: @color3;
+      font-family: sans-serif;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-align: left;
+      text-transform: uppercase;
+    //  transition
+      
+      a {
+        color: @footer-text;
+        opacity: 0.8;
+        margin-top: 20px;
+        text-decoration: none;
+        
+        &:hover {
+          color: @footer;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  position: relative;
+}
+
 .img-bg {
   width: 100%;
   background-color: white;
-  padding: 5%;
+  padding: 15% 10%;
   
-  .about-header-img {
-   background-image: url(../images/fond_about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  .about-hero {
+    z-index: 0;
+    width: 100%;
     height: 500px;
+    overflow: hidden;
   }
+}
+
+.a {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+  position: absolute;
+  top: 13%;
+  left: 24%;
+}
+
+.b {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+  position: absolute;
+  top: 13%;
+  left: 42%;
+}
+
+.o {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  left: 24%;
+}
+
+.u {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+}
+
+.t {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+  position: absolute;
+  top: 67%;
+  left: 24%;
+}
+
+.about-text {
+  color: @color1;
+  font-size: 1em;
+  line-height: 2em;
+  position: absolute;
+  top: 43%;
+  left: 55%;
+  right: 19%;
+}
+
+.about-emphasis {
+  color: @color4;
+}
+
+.about-squares {
+  margin: 2% auto;
+//  position: absolute;
+//  top: 50%;
+//  left: 15%;
+//  right: 15%;
 }
 
 
@@ -292,16 +436,13 @@ body {
 
 // FOOTER STYLES
 
-// TODO - install bootstrap and change .row margin-left and margin-right to 0
-
 footer {
   background-color: @footer;
   color: @footer-text;
   font-size: 0.9em;
-//  margin-top: 10%;
-  padding: 2%;
+  padding: 1.5%;
   position: fixed;
-  bottom: 0;
+  top: 80%;
   left: 0;
   width: 100%;
   
