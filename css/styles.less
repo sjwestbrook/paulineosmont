@@ -41,9 +41,9 @@
 
 //GLOBAL STYLES
 
-* {
-  outline: 1px dashed red;
-}
+//* {
+//  outline: 1px dashed red;
+//}
 
 html, body {
   margin: 0;
@@ -283,7 +283,6 @@ body {
   align-content:space-between;
   
   .menu {
-//    width: 60%;
     margin: 0 auto;
     
 //    .menuhome {
@@ -306,7 +305,6 @@ body {
       width: 75px;
       height: auto;
       margin: 0 auto;
-//      padding: 0 5%;
     }
     
     .number {
@@ -315,7 +313,6 @@ body {
       font-family: serif;
       font-size: 2em;  
       margin: 0 5% 8% 5%;
-      opacity: 0.5;
       text-align: right;
     //  transition
     }
@@ -328,7 +325,6 @@ body {
       letter-spacing: 0.15em;
       text-align: left;
       text-transform: uppercase;
-    //  transition
       
       a {
         color: @footer-text;
@@ -411,22 +407,32 @@ body {
   left: 24%;
 }
 
+// TODO - figure out how to get black line opposite T
+.underscore {  
+  border-bottom: 3px solid @footer;
+  position: absolute;
+  top: 79%;
+  left: 42%;
+  width: 20px;
+}
+
 .about-text {
-  color: @color1;
+  color: @footer-text;
   font-size: 1em;
   line-height: 2em;
   position: absolute;
-  top: 43%;
+  top: 45%;
   left: 55%;
   right: 19%;
 }
 
 .about-emphasis {
-  color: @color4;
+  color: @color1;
 }
 
 .about-squares {
   margin: 2% auto;
+  width: 80%;
 //  position: absolute;
 //  top: 50%;
 //  left: 15%;
