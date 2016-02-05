@@ -4,16 +4,59 @@
 
 @color1: rgb(189,189,189);
 @color2: rgb(205,181,134);
+@color2b: darken(@color2, 20%);
 @color3: rgb(205,205,205);
 @color4: #ffffff;
 @color5: rgb(119,119,119);
 @color6: #000000;
+@color7: rgb(214,214,214);
 @footer-text: rgb(146,146,146);
 @footer: rgb(34,34,34);
 @overlay1: rgb(169,78,74);
 @overlay2: rgb(19,71,110);
 @overlay3: rgb(120,155,144);
 @overlay4: rgb(203,207,174);
+
+
+.about-letters {
+  color:  @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+}
+
+.location {
+  background-size: contain;
+  height: 400px;
+}
+
+.overlay {
+  opacity: 0.8;
+  height: 315px;
+  width: 455px;
+  position: absolute;
+}
+
+.works-images {
+  background-size: cover;
+  height: 300px;
+}
+
+.contact-letters {
+  color: @color2;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+}
+
+.contact-letters2 {
+  color: @color1;
+  font-family: serif;
+  font-size: 8em;
+  z-index: 10;
+}
+
+
 
 // GLOBAL CLASSES
 
@@ -53,9 +96,9 @@
 
 //GLOBAL STYLES
 
-//* {
-//  outline: 1px dashed red;
-//}
+* {
+  outline: 1px dashed red;
+}
 
 html, body {
   margin: 0;
@@ -179,13 +222,9 @@ body {
 // WORKS STYLES ======================
 
 .header-white2 {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
   background-color: white;
   height: 25%;
   width: 100%;
-//  margin: 0 10%;
   padding: 2%;
   display: inline-flex;
   align-content:space-between;
@@ -254,83 +293,67 @@ body {
   
   .img1 {
     background-image: url(../images/maram.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img2 {
     background-image: url(../images/zooecomuseum.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img3 {
     background-image: url(../images/cgi.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img4 {
     background-image: url(../images/antoinelestage.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img5 {
     background-image: url(../images/tokkun.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img6 {
     background-image: url(../images/soulofthedeadtree.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img7 {
     background-image: url(../images/pmmt.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img8 {
     background-image: url(../images/dixon.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img9 {
     background-image: url(../images/artspire.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img10 {
     background-image: url(../images/depevt.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img11 {
     background-image: url(../images/lerecyclagepasapas.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img12 {
     background-image: url(../images/inlogia.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img13 {
     background-image: url(../images/witchatt.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img14 {
     background-image: url(../images/antro.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img15 {
     background-image: url(../images/origami.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
   .img16 {
     background-image: url(../images/legrandbal.jpg);
-    background-size: cover;
-    height: 300px;
+    .works-images;
   }
 }
 
@@ -404,50 +427,35 @@ body {
 }
 
 .a {
-  color:  @color2;
-  font-family: serif;
-  font-size: 8em;
-  z-index: 10;
+  .about-letters;
   position: absolute;
   top: 9%;
   left: 24%;
 }
 
 .b {
-  color:  @color2;
-  font-family: serif;
-  font-size: 8em;
-  z-index: 10;
+  .about-letters;
   position: absolute;
   top: 9%;
   left: 42%;
 }
 
 .o {
-  color:  @color2;
-  font-family: serif;
-  font-size: 8em;
-  z-index: 10;
+  .about-letters;
   position: absolute;
   top: 47%;
   left: 24%;
 }
 
 .u {
-  color:  @color2;
-  font-family: serif;
-  font-size: 8em;
-  z-index: 10;
+  .about-letters;
   position: absolute;
   top: 47%;
   left: 42%;
 }
 
 .t {
-  color:  @color2;
-  font-family: serif;
-  font-size: 8em;
-  z-index: 10;
+  .about-letters;
   position: absolute;
   top: 79%;
   left: 24%;
@@ -484,60 +492,42 @@ body {
   
   .location-img1 {
     background-image: url(../images/lyon_nb.jpg);
-    background-size: contain;
-    height: 400px;    
+    .location;   
   }
   .location-img2 {
     background-image: url(../images/montreal.jpg);
-    background-size: contain;
-    height: 400px;
+    .location;
   }
   .location-img3 {
     background-image: url(../images/paris_nb.jpg);
-    background-size: contain;
-    height: 400px;
+    .location;
   }
   .location-img4 {
     background-image: url(../images/sunderland.jpg);
-    background-size: contain;
-    height: 400px;
+    .location;
   }
   
   .overlay-img1 {
     background-color: @overlay1;
-    opacity: 0.8;
-    height: 315px;
-    width: 455px;
-    position: absolute;
+    .overlay; 
     top: 8%;
     left: 10%;
   }
   .overlay-img2 {
     background-color: @overlay2;
-    opacity: 0.8;
-    height: 350px;
-    height: 315px;
-    width: 455px;
-    position: absolute;
+    .overlay; 
     top: 8%;
     left: 7%;
   }
   .overlay-img3 {
     background-color: @overlay3;
-    opacity: 0.8;
-    height: 350px;
-    height: 315px;
-    width: 455px;
-    position: absolute;
+    .overlay;
     top: 8%;
     left: 10%;
   }
   .overlay-img4 {
     background-color: @overlay4;
-    opacity: 0.8;
-    height: 315px;
-    width: 455px;
-    position: absolute;
+    .overlay;
     top: 8%;
     left: 7%;
   }
@@ -607,10 +597,129 @@ body {
 
 
 
-
 //CONTACT STYLES ======================
 
+.contactC {
+  position: absolute;
+  top: 9%;
+  left: 22%;
+  .contact-letters; 
+}
 
+.contactO {
+  position: absolute;
+  top: 9%;
+  left: 47%;
+  .contact-letters; 
+}
+
+.contactN {
+  position: absolute;
+  top: 9%;
+  left: 72%;
+  .contact-letters; 
+}
+
+.contactT {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  .contact-letters; 
+}
+
+.contactA {
+  position: absolute;
+  top: 45%;
+  left: 47%;
+  .contact-letters; 
+}
+.contactC2 {
+  position: absolute;
+  top: 45%;
+  left: 72%;
+  .contact-letters; 
+}
+.contactT2 {
+  position: absolute;
+  top: 80%;
+  left: 22%;
+  .contact-letters; 
+}
+.contactM {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  .contact-letters2; 
+}
+.contactE {
+  position: absolute;
+  top: 80%;
+  left: 72%;
+  .contact-letters2; 
+}
+
+.contact-left {
+  margin: 5% 0;
+  padding: 3% 2% 0 11%;
+//  width: 90%
+//  background-color: lightblue;
+}
+
+.contact-right {
+  margin: 5% 0;
+  padding: 3% 10% 0 2%;
+//  width: 90%
+//  background-color: lightcoral;
+}
+
+.legend1, .legend2, .legend3, .legend4, .legend5 {
+  color: @color2b;
+  display: block;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin: 2.5% 0;  
+  text-transform: uppercase;
+}
+
+.legend5 {
+  color: @color2b;
+  display: block;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin: 2.5% 0 0 0;  
+  text-transform: uppercase;
+}
+
+.input1, .input2, .input3, .input4 {
+  border-bottom: 3px solid @color7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: @color3;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 10%;
+  padding-bottom: 2.25%; 
+  vertical-align: text-top; 
+  width: 100%;
+}
+
+.input5 {
+  background-image: url(../images/line.png);
+  background-repeat: repeat;
+  border: none;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 10%;
+  padding-bottom: 2%;
+  vertical-align: text-top; 
+  height: 400px;
+  width: 100%;
+}
 
 
 // FOOTER STYLES ======================
