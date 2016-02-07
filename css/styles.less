@@ -1,6 +1,6 @@
 //PAULINE OSMOND STYLES
 
-//VARIABLES, MIXINS, ETC
+//VARIABLES, MIXINS, ETC =============================
 
 @color1: rgb(189,189,189);
 @color2: rgb(205,181,134);
@@ -58,7 +58,7 @@
 
 
 
-// GLOBAL CLASSES
+// GLOBAL CLASSES ===========================
 
 .row-no-margin {
  margin-left: 0px;
@@ -94,11 +94,11 @@
   padding-left: 5%;
 }
 
-//GLOBAL STYLES
+//GLOBAL STYLES ===============================
 
-* {
-  outline: 1px dashed red;
-}
+//* {
+//  outline: 1px dashed red;
+//}
 
 html, body {
   margin: 0;
@@ -747,7 +747,7 @@ body {
     float: left;
     height: 100%;
     width: 25%;
-    border: 2px solid red;
+//    border: 2px solid red;
     
     &:nth-child(2n+0) {
       background-color: #ddd;
@@ -755,8 +755,8 @@ body {
   }
   .linkedin {
      background-image: url(../images/social_linkedin.png);
-      background-repeat: no-repeat;
-      background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
   .society6 {
@@ -833,10 +833,58 @@ footer {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-//@media (min-width: @screen-sm-min) { 
-//
-//}
-//
+@media (min-width: 768px) { 
+//  .pad-left-10 {
+//    padding-left: 0;
+//  }
+  
+  .logo {
+    display: block;
+    margin: 12% auto;
+    width: 80%;
+    height: auto;
+  }
+  
+  footer {
+    font-size: 1em;
+    height: 25%;
+//    padding: 5%;
+    position: fixed;
+    top: 75%;
+    left: 0;
+    width: 100%;
+
+    ul {
+      width: 100%;
+      margin: 0 auto; 
+      padding: 12% 2%;
+      
+      li {
+        width: 100%;
+      }
+    }
+  }
+  
+  .visible {
+    position: fixed;
+    top: 55%;
+    left: 19%;
+
+    .menu {
+      
+      .number {
+        font-size: 5em; 
+      //  transition
+      }
+
+      .label {
+        font-size: 1.5em;
+      //  transition
+      }
+    }
+  }
+}
+
 ///* Medium devices (desktops, 992px and up) */
 //@media (min-width: @screen-md-min) { 
 //
@@ -846,6 +894,12 @@ footer {
 //@media (min-width: @screen-lg-min) { 
 //
 //}
+
+
+
+
+
+
 
 
 // We occasionally expand on these media queries to include a max-width to limit CSS to a narrower set of devices.
