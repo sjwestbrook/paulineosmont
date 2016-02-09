@@ -841,10 +841,271 @@ footer {
 
 
 /* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+@media screen and (min-width: 320px) and (orientation:portrait) { 
+//  .pad-left-10 {
+//    padding-left: 0;
+//  }
+  
+  .home-header {
+    font-size: 0.9em;
+  }
+
+  
+  .logo {
+    display: block;
+    margin: 4% auto;
+    width: 65%;
+    height: auto;
+  }
+  
+  footer {
+    font-size: 0.9em;
+    height: 43%;
+    position: fixed;
+    top: 57%;
+    left: 0;
+    width: 100%;
+
+    .footer-head {
+      font-size: 1em;
+    }
+    
+    ul {
+      width: 100%;
+      margin: 0 auto; 
+      padding-top: 4%;
+      li {
+        width: 100%; 
+      }
+    }
+  }
+  
+  .pad-left-10 {
+    padding-left: 0;
+  }
+  
+  .visible {
+    position: fixed;
+    top: 35%;
+    left: 2%;
+    padding: 2%;
+
+    .menu {
+      
+      .number {
+        font-size: 1.5em; 
+      //  transition
+      }
+
+      .label {
+        font-size: 0.9em;
+      //  transition
+      }
+    }
+  }
+  
+  // ABOUT =====================
+  
+  .about-text {
+    font-size: 1.1em;
+    line-height: 2em;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    right: 19%;
+  }
+
+   .margin-left-768 {
+      margin-left: 2%;
+      padding-right: 0;
+    }
+  
+  .overlay {
+    height: 320px;
+    width: 535px;
+    position: absolute;
+  }
+  
+  .a {
+    .about-letters;
+    position: absolute;
+    top: 2%;
+    left: 24%;
+  }
+
+  .b {
+    .about-letters;
+    position: absolute;
+    top: 2%;
+    left: 42%;
+  }
+
+  .o {
+    .about-letters;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+  }
+
+  .u {
+    .about-letters;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+  }
+  
+  .about-squares {
+    margin: 2% auto;
+    width: 80%;
+    position: relative;
+
+    .overlay-img1 {
+      background-color: @overlay1;
+      .overlay; 
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img2 {
+      background-color: @overlay2;
+      .overlay; 
+      top: 8%;
+      left: 7%;
+    }
+    .overlay-img3 {
+      background-color: @overlay3;
+      .overlay;
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img4 {
+      background-color: @overlay4;
+      .overlay;
+      top: 8%;
+      left: 7%;
+    }
+
+    .short-name {
+      text-align: center;
+      position: absolute;
+      top: 12%;
+      left: 37%;  
+    }
+
+    .long-name {
+      text-align: center;
+      position: absolute;
+      top: 12%;
+      left: 31%;
+    }
+
+    .job {
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 27%;
+    }
+    
+    .dates {
+      font-size: 1.em;
+
+      .start-date2 {
+        position: absolute;
+        top: 70%;
+        left: 12%;
+        text-align: right;
+      }
+
+      .end-date1 {
+        position: absolute;
+        top: 70%;
+        left: 79%;
+        text-align: left;
+      }
+      .end-date2 {
+        position: absolute;
+        top: 70%;
+        left: 82%;
+        text-align: left;
+      }
+    }
+
+  }
+  
+  // CONTACT ======================
+  
+  .contactC {
+    position: absolute;
+    top: 3%;
+    left: 22%;
+    .contact-letters; 
+  }
+
+  .contactO {
+    position: absolute;
+    top: 3%;
+    left: 47%;
+    .contact-letters; 
+  }
+
+  .contactN {
+    position: absolute;
+    top: 3%;
+    left: 72%;
+    .contact-letters; 
+  }
+
+  .contactT {
+    position: absolute;
+    top: 39%;
+    left: 22%;
+    .contact-letters; 
+  }
+
+  .contactA {
+    position: absolute;
+    top: 39%;
+    left: 47%;
+    .contact-letters; 
+  }
+  .contactC2 {
+    position: absolute;
+    top: 39%;
+    left: 72%;
+    .contact-letters; 
+  }
+
+  .contact-left {
+    margin: 5%;
+    padding: 3% ;
+  }
+
+  .contact-right {
+    margin: 0 5% 5% 5%;
+    padding: 0 3% 3% 3%;
+  }
+  
+  .input1, .input2, .input3, .input4 {
+    font-size: 1.1em;
+  }
+  
+  .input5 {
+    font-size: 1.1em;
+  }
+
+  .submit-btn {
+    margin: 0 10% 10% 10%;
+    padding: 2%;
+  //  transition
+  }
+
+}
+
+
+// ====================================
+
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media screen and (min-width: 768px) and (orientation:portrait) { 
 //  .pad-left-10 {
 //    padding-left: 0;
 //  }
