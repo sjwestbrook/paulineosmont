@@ -26,7 +26,7 @@
 }
 
 .location {
-  background-size: contain;
+  background-size: cover;
   height: 400px;
 }
 
@@ -949,52 +949,75 @@ footer {
   
  // ABOUT =====================
   
+  .img-bg {
+    padding: 5% 0;
+  }
+  
   .about-text {
     font-size: 1.1em;
     line-height: 2em;
     position: absolute;
     top: 35%;
-    left: 60%;
-    right: 19%;
+    left: 20%;
+    right: 20%;
   }
-
-   .margin-left-768 {
-      margin-left: 2%;
-      padding-right: 0;
-    }
   
-  .overlay {
-    height: 320px;
-    width: 535px;
-    position: absolute;
+  .about-letters {
+    font-size: 3em;
+    z-index: 10;
   }
   
   .a {
     .about-letters;
     position: absolute;
-    top: 2%;
-    left: 24%;
+    top: 15%;
+    left: 20%;
   }
 
   .b {
     .about-letters;
     position: absolute;
-    top: 2%;
-    left: 42%;
+    top: 15%;
+    left: 33%;
   }
 
   .o {
     .about-letters;
     position: absolute;
-    top: 40%;
-    left: 24%;
+    top: 15%;
+    left: 45%;
   }
 
   .u {
     .about-letters;
     position: absolute;
-    top: 40%;
-    left: 42%;
+    top: 15%;
+    left: 57%;
+  }
+
+  .t {
+    .about-letters;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+  }
+
+  .underscore {  
+    display: none;
+  }
+  
+  .overlay {
+//    height: 320px;
+    width: 230px;
+    position: absolute;
+  }
+  
+  .col-no-padding-r {
+    padding-left: 0;
+  }
+  
+  .col-no-padding-l {
+    padding-right: 0;
   }
   
   .about-squares {
@@ -1005,40 +1028,42 @@ footer {
     .overlay-img1 {
       background-color: @overlay1;
       .overlay; 
-      top: 8%;
+      top: 9%;
       left: 10%;
     }
     .overlay-img2 {
       background-color: @overlay2;
       .overlay; 
-      top: 8%;
-      left: 7%;
+      top: 9%;
+      left: 10%;
     }
     .overlay-img3 {
       background-color: @overlay3;
       .overlay;
-      top: 8%;
+      top: 9%;
       left: 10%;
     }
     .overlay-img4 {
       background-color: @overlay4;
       .overlay;
-      top: 8%;
-      left: 7%;
+      top: 9%;
+      left: 10%;
     }
 
     .short-name {
       text-align: center;
       position: absolute;
       top: 12%;
-      left: 37%;  
+      left: 22%;  
+      font-size: 3em;
     }
 
     .long-name {
       text-align: center;
       position: absolute;
       top: 12%;
-      left: 31%;
+      left: 18%;
+      font-size: 3em;
     }
 
     .job {
@@ -1054,20 +1079,20 @@ footer {
       .start-date2 {
         position: absolute;
         top: 70%;
-        left: 12%;
+        left: 13%;
         text-align: right;
       }
 
       .end-date1 {
         position: absolute;
         top: 70%;
-        left: 79%;
+        left: 65%;
         text-align: left;
       }
       .end-date2 {
         position: absolute;
         top: 70%;
-        left: 82%;
+        left: 73%;
         text-align: left;
       }
     }
@@ -1076,47 +1101,74 @@ footer {
   
   // CONTACT ======================
   
+  .contact-letters {
+    font-size: 3em;
+  }
+
+  .contact-letters2 {
+    font-size: 3em;
+  }
+  
   .contactC {
     position: absolute;
-    top: 3%;
+    top: 20%;
     left: 22%;
     .contact-letters; 
   }
 
   .contactO {
     position: absolute;
-    top: 3%;
+    top: 20%;
     left: 47%;
     .contact-letters; 
   }
 
   .contactN {
     position: absolute;
-    top: 3%;
+    top: 20%;
     left: 72%;
     .contact-letters; 
   }
 
   .contactT {
     position: absolute;
-    top: 39%;
+    top: 43%;
     left: 22%;
     .contact-letters; 
   }
 
   .contactA {
     position: absolute;
-    top: 39%;
+    top:43%;
     left: 47%;
     .contact-letters; 
   }
   .contactC2 {
     position: absolute;
-    top: 39%;
+    top: 43%;
     left: 72%;
     .contact-letters; 
   }
 
+  .contactT2 {
+    position: absolute;
+    top: 67%;
+    left: 22%;
+    .contact-letters; 
+  }
+  .contactM {
+    position: absolute;
+    top: 67%;
+    left: 47%;
+    .contact-letters2; 
+  }
+  .contactE {
+    position: absolute;
+    top: 67%;
+    left: 72%;
+    .contact-letters2; 
+  }
+  
   .contact-left {
     margin: 5%;
     padding: 3% ;
@@ -1128,19 +1180,70 @@ footer {
   }
   
   .input1, .input2, .input3, .input4 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   
   .input5 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .submit-btn {
     margin: 0 10% 10% 10%;
     padding: 2%;
+    font-size: 1.1em;
   //  transition
   }
 
+//  .social-row {
+//    background-color: #333;
+//  }
+//  
+  .social {  
+    margin: 7% 16% 16%;
+    padding: 0;
+    height: 100px;
+    width: 80%;  
+
+    a {
+      background-color: #ccc;
+      display: block;
+      float: left;
+      height: 100%;
+      width: 21%;
+  //    border: 2px solid red;
+
+      &:nth-child(2n+0) {
+        background-color: #ddd;
+      }    
+    }
+    .linkedin {
+       background-image: url(../images/social_linkedin.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: contain;
+//       margin: 2%;
+    }
+
+    .society6 {
+      background:  url(../images/social_society6noir.png) no-repeat center center;
+      background-size: contain;
+//      margin: 2%;
+    }
+
+    .behance {
+      background-image: url(../images/social_behance.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+//      margin: 2%;
+    }
+
+    .pinterest {
+      background:  url(../images/social_pinterest.png) no-repeat center center;
+      background-size: contain;
+//      margin: 2%;
+    }
+  }
 }
 
 
@@ -1207,13 +1310,63 @@ footer {
  
 // ABOUT =====================
   
+  .header-white2 {
+    background-color: white;
+    height: 25%;
+    width: 100%;
+    padding: 2%;
+    display: inline-flex;
+    align-content:space-between;
+  
+    .menu {
+      margin: 0 auto;
+      .logo-circle {
+        width: 75px;
+        height: auto;
+        margin: 0 auto;
+      }
+    
+    .number {
+      border-bottom: 3px solid @color2;
+      color: @color2;
+      font-family: serif;
+      font-size: 2em;  
+      margin: 0 5% 8% 5%;
+      text-align: right;
+    //  transition
+    }
+
+    .label {
+      color: @color3;
+      font-family: sans-serif;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-align: left;
+      text-transform: uppercase;
+      
+      a {
+        color: @footer-text;
+        opacity: 0.8;
+        margin-top: 20px;
+        text-decoration: none;
+        
+        &:hover {
+          color: @footer;
+        }
+      }
+    }
+  }
+}
+
+  
   .about-text {
     font-size: 1.1em;
     line-height: 2em;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 60%;
-    right: 19%;
+    right: 15%;
   }
 
    .margin-left-768 {
@@ -1230,29 +1383,36 @@ footer {
   .a {
     .about-letters;
     position: absolute;
-    top: 2%;
+    top: -5%;
     left: 24%;
   }
 
   .b {
     .about-letters;
     position: absolute;
-    top: 2%;
+    top: -5%;
     left: 42%;
   }
 
   .o {
     .about-letters;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 24%;
   }
 
   .u {
     .about-letters;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 42%;
+  }
+  
+  .t {
+    .about-letters;
+    position: absolute;
+    top: 77%;
+    left: 24%;
   }
   
   .about-squares {
@@ -1334,47 +1494,80 @@ footer {
   
   // CONTACT ======================
   
+  .contact-letters {
+    color: @color2;
+    font-family: serif;
+    font-size: 8em;
+    z-index: 10;
+  }
+
+  .contact-letters2 {
+    color: @color1;
+    font-family: serif;
+    font-size: 8em;
+    z-index: 10;
+  }
+  
   .contactC {
     position: absolute;
-    top: 3%;
+    top: -5%;
     left: 22%;
     .contact-letters; 
   }
 
   .contactO {
     position: absolute;
-    top: 3%;
+    top: -5%;
     left: 47%;
     .contact-letters; 
   }
 
   .contactN {
     position: absolute;
-    top: 3%;
+    top: -5%;
     left: 72%;
     .contact-letters; 
   }
 
   .contactT {
     position: absolute;
-    top: 39%;
+    top: 37%;
     left: 22%;
     .contact-letters; 
   }
 
   .contactA {
     position: absolute;
-    top: 39%;
+    top: 37%;
     left: 47%;
     .contact-letters; 
   }
   .contactC2 {
     position: absolute;
-    top: 39%;
+    top: 37%;
     left: 72%;
     .contact-letters; 
   }
 
+  .contactT2 {
+    position: absolute;
+    top: 80%;
+    left: 22%;
+    .contact-letters; 
+  }
+  .contactM {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    .contact-letters2; 
+  }
+  .contactE {
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    .contact-letters2; 
+  }
+  
   .contact-left {
     margin: 5%;
     padding: 3% ;
@@ -1399,6 +1592,51 @@ footer {
   //  transition
   }
 
+  .social-row {
+    background-color: transparent;
+  }
+  .social {  
+  margin: 7% 10%;
+  padding: 0;
+  height: 200px;
+  width: 80%;  
+    
+  a {
+    background-color: #ccc;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 25%;
+//    border: 2px solid red;
+    
+    &:nth-child(2n+0) {
+      background-color: #ddd;
+    }    
+  }
+  .linkedin {
+     background-image: url(../images/social_linkedin.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 0;
+  }
+
+    .society6 {
+      background:  url(../images/social_society6noir.png) no-repeat center center;
+      margin: 0;
+    }
+
+    .behance {
+      background-image: url(../images/social_behance.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+    }
+
+    .pinterest {
+      background:  url(../images/social_pinterest.png) no-repeat center center;
+      margin: 0;
+    }
+  }
 }
 
 ///* Medium devices (desktops, 992px and up) */
