@@ -743,7 +743,14 @@ body {
   padding: 2%;
   text-transform: uppercase;
   width: 80%;
-//  transition
+  transition-property: color, background;
+  transition-duration: 0.05s, 0.05s;
+  transition-timing-function: linear, linear;
+  
+  &:hover, &:focus {
+    color: @color4;
+    background-color: @submit;
+  }
 }
 
 .social {  
@@ -758,30 +765,48 @@ body {
     float: left;
     height: 100%;
     width: 25%;
-//    border: 2px solid red;
+    
     
     &:nth-child(2n+0) {
       background-color: #ddd;
-    }    
+      transition: background-color 0.05s linear;
+    }        
   }
+  
   .linkedin {
-     background-image: url(../images/social_linkedin.png);
+    background-image: url(../images/social_linkedin.png);
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 0.05s linear;
+    &:hover, &:focus {
+      background-color: @overlay1;
     }
+  }
 
   .society6 {
     background:  url(../images/social_society6noir.png) no-repeat center center;
+    transition: background-color 0.05s linear;
+    &:hover, &:focus {
+      background-color: @overlay2;
+    }
   }
 
   .behance {
     background-image: url(../images/social_behance.png);
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 0.05s linear;
+    &:hover, &:focus {
+      background-color: @overlay3;
+    }
   }
 
   .pinterest {
     background:  url(../images/social_pinterest.png) no-repeat center center;
+    transition: background-color 0.05s linear;
+    &:hover, &:focus {
+      background-color: @overlay4;
+    }
   }
 }
 
@@ -1001,10 +1026,6 @@ footer {
     top: 15%;
     left: 70%;
   }
-
-//  .underscore {  
-//    display: none;
-//  }
   
   .overlay {
 //    height: 320px;
