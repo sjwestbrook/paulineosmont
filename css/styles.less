@@ -1002,9 +1002,9 @@ footer {
     left: 70%;
   }
 
-  .underscore {  
-    display: none;
-  }
+//  .underscore {  
+//    display: none;
+//  }
   
   .overlay {
 //    height: 320px;
@@ -1415,6 +1415,16 @@ footer {
     left: 24%;
   }
   
+//  .underscore {  
+//    position: absolute;
+//    z-index: 1;
+//    left: 43%;
+//    top: 96%;
+//    bottom: 25px;
+//    width: 70px;
+//    height: 4px;
+//    background-color: @color6;
+//  }
   .about-squares {
     margin: 2% auto;
     width: 80%;
@@ -1640,14 +1650,196 @@ footer {
 }
 
 ///* Medium devices (desktops, 992px and up) */
-//@media (min-width: @screen-md-min) { 
-//
-//}
+@media (min-width: 1280px) { 
+  .overlay {
+    opacity: 0.8;
+    height: 315px;
+    width: 430px;
+    position: absolute;
+  }
+  
+  .about-squares {
+    margin: 2% auto;
+    width: 80%;
+    position: relative;
+
+    .overlay-img1 {
+      background-color: @overlay1;
+      .overlay; 
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img2 {
+      background-color: @overlay2;
+      .overlay; 
+      top: 8%;
+      left: 7%;
+    }
+    .overlay-img3 {
+      background-color: @overlay3;
+      .overlay;
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img4 {
+      background-color: @overlay4;
+      .overlay;
+      top: 8%;
+      left: 7%;
+    }
+
+    .short-name {
+      position: absolute;
+      top: 12%;
+      left: 33%;
+      right: 33%;    
+    }
+
+    .long-name {
+      position: absolute;
+      top: 12%;
+      left: 28%;
+      right: 33%;
+    }
+
+    .job {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      right: 25%;
+    }
+
+    .dates {
+      .start-date1 {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        text-align: right;
+      }
+
+      .start-date2 {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        text-align: right;
+      }
+
+      .end-date1 {
+        position: absolute;
+        top: 70%;
+        left: 75%;
+        text-align: left;
+      }
+      
+      .end-date2 {
+        position: absolute;
+        top: 70%;
+        left: 78%;
+        text-align: left;
+      }
+    }
+  }
+  
+  .input1, .input2, .input3, .input4, .input5 {
+    font-size: 1.1em;
+  }
+
+}
+
+
 //
 ///* Large devices (large desktops, 1200px and up) */
-//@media (min-width: @screen-lg-min) { 
-//
-//}
+@media (min-width: 1366px) { 
+  .overlay {
+    opacity: 0.8;
+    height: 315px;
+    width: 455px;
+    position: absolute;
+  }
+  
+  .about-squares {
+    margin: 2% auto;
+    width: 80%;
+    position: relative;
+
+    .overlay-img1 {
+      background-color: @overlay1;
+      .overlay; 
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img2 {
+      background-color: @overlay2;
+      .overlay; 
+      top: 8%;
+      left: 7%;
+    }
+    .overlay-img3 {
+      background-color: @overlay3;
+      .overlay;
+      top: 8%;
+      left: 10%;
+    }
+    .overlay-img4 {
+      background-color: @overlay4;
+      .overlay;
+      top: 8%;
+      left: 7%;
+    }
+
+    .short-name {
+      position: absolute;
+      top: 12%;
+      left: 33%;
+      right: 33%;    
+    }
+
+    .long-name {
+      position: absolute;
+      top: 12%;
+      left: 28%;
+      right: 33%;
+    }
+
+    .job {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      right: 25%;
+    }
+
+    .dates {
+      .start-date1 {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        text-align: right;
+      }
+
+      .start-date2 {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        text-align: right;
+      }
+
+      .end-date1 {
+        position: absolute;
+        top: 70%;
+        left: 75%;
+        text-align: left;
+      }
+      
+      .end-date2 {
+        position: absolute;
+        top: 70%;
+        left: 78%;
+        text-align: left;
+      }
+    }
+  }
+  
+}
 
 
 
